@@ -1,0 +1,420 @@
+/* Estilo geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .poppins-thin {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      
+      .poppins-extralight {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+      
+      .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .poppins-extrabold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+      }
+      
+      .poppins-black {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
+      .poppins-thin-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+      }
+      
+      .poppins-extralight-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: italic;
+      }
+      
+      .poppins-light-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+      
+      .poppins-regular-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .poppins-medium-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+      
+      .poppins-semibold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+      }
+      
+      .poppins-bold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+      
+      .poppins-extrabold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: italic;
+      }
+      
+      .poppins-black-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+      
+
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.flex{
+    display: flex;
+
+
+}
+
+.btn-contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+  
+
+
+}
+
+h2.title{
+  color: #ffffff;
+  font-size: 90x;
+  text-align: center;
+}
+
+/* Estilo do cabeçalho */
+header{
+    padding: 40px 4%;
+
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header a{
+    color: #302d2d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header nav.menu-desktop a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav. ul {
+    list-style-type: none;
+}
+.orveley-menu{
+  background-color: #00000075;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 88888;
+  display: none;
+}
+header nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+/* estilo do menu mobile */
+.btn-abrir-menu i{
+  color: #fff;
+  font-size: 40px;
+
+}
+.menu-mobile{
+  background-color: #292727;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  width: 0%;
+  overflow: hidden;
+  transition: .5s;
+}
+.menu-mobile.abri-menu{
+  width: 70%;
+}
+.menu-mobile.abri-menu ~ .orveley-menu{
+    display: block;
+}
+.menu-mobile .btn-fecha{
+  padding: 20px 5%;
+}
+.menu-mobile .btn-fecha i{
+  color: #fff;
+  font-size: 30px;
+}
+.menu-mobile nav ul{
+  text-align: right;
+}
+.menu-mobile nav ul li a{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 20px 8%;
+  display: block;
+}
+.menu-mobile nav ul li a:hover{
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-contato button{
+    box-shadow:  0px 0px 8px rgb(107, 107, 107);
+    transform: scale(1.05);
+   
+}
+
+/* Estilo do topo do site */
+
+section.topo-do-site{
+    padding: 40px 4%;
+
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+}
+
+.txt-topo-site  h1{
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 10px;
+    
+
+
+}
+.txt-topo-site h1 span{
+  color: #575353;
+  font-size: 25px;
+
+}
+
+.topo-do-site .txt-topo-site p{
+  color: #fff;
+  margin: 40px 0px;
+  font-size: 25px;
+}
+
+.topo-do-site .img-top-do-site img{
+  position: relative;
+  animation: flutuar 6s ease-in-out infinite alternate;
+
+}
+
+@keyframes flutuar{
+  0%{
+    top: 0;
+  }
+  100%{
+    top: 30px
+  }
+
+}
+
+
+/* Arumar imagem é velocidade */
+
+section .especialidade{
+  padding: 40px 4%;
+}
+section.especialidade .flex{
+  gap: 60px;
+}
+
+.especialidade .especialidade-box{
+  color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  
+  margin-top: 45px;
+  transition: .2s;
+
+}
+.especialidade .especialidade-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #ffffffa1;
+}
+.especialidade .especialidade-box i{
+  font-size: 70px;
+  color: #fff;
+
+}
+.especialidade .especialidade-box h3{
+  font-size: 28px;
+  margin: 15px 0;
+
+}
+
+/* estilo do sobre */
+
+section.sobre-um{
+  padding: 100px 20%;
+
+}
+section.sobre-um .flex{
+  text-align: center;
+  gap: 60px;
+}
+.Sobre-um .txt-sobre{
+  color: #fff;
+}
+.Sobre-um .txt-sobre h2{
+
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+
+}
+.Sobre-um .txt-sobre h2 span{
+  color: #575353;
+  display: block;
+
+}
+.Sobre-um .txt-sobre p{
+  margin: 10px 0;
+  font-size: 25px;
+  
+}
+
+.Sobre-um .txt-sobre .btn-social button{
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  border: none;
+  background-color: #fdfdfda1;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+@media screen and ( max-width: 1080px){
+  
+  .flex{
+    flex-direction: column-reverse;
+
+  }
+  h2.titulo{
+    font-size: 30px;
+    line-height: 30px;
+
+  }
+  /* Cabe tudo meu */
+  .menu-desktop, .btn-contato{
+    display: none;
+  }
+  /* topo do site */
+  
+section.topo-do-site .flex{
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+}
+  section.topo-do-site{
+    padding: 20px 4%;
+
+}
+  .txt-topo-site  h1{
+    font-size: 25px;
+    line-height: 10px;
+  }
+  .topo-do-site .img-top-do-site img{
+    width: 100%;
+  }
+
+  /* espercialidades */
+  section .especialidade{
+    padding: 40px 10%;
+
+  }
+
+  /* sobre */
+  section.sobre-um {
+    padding: 80px 8%;
+  }
+  .Sobre-um .txt-sobre h2{
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
